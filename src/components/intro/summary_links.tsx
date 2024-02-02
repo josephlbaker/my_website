@@ -6,8 +6,10 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useActiveSectionContext } from "@/src/context/active_section_context";
 
 export default function SummaryLinks() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <motion.div
       className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -18,6 +20,10 @@ export default function SummaryLinks() {
       <Link
         href="#contact"
         className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        onClick={() => {
+          setActiveSection("Contact");
+          setTimeOfLastClick(Date.now());
+        }}
       >
         Contact me here{" "}
         <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
