@@ -24,6 +24,8 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
+
   try {
     // const emailContent = React.createElement(ContactFormEmail, {
     //   senderEmail: senderEmail as string,
@@ -43,4 +45,8 @@ export const sendEmail = async (formData: FormData) => {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+  };
 };
