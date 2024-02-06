@@ -10,11 +10,11 @@ export default function Summary() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <span className="font-bold">Hello, I'm Joe.</span> I'm a{" "}
-      <span className="font-bold">full-stack developer</span> with{" "}
+      <span className="font-bold">I'm Joe,</span> a{" "}
+      <span className="font-bold">software engineer</span> with{" "}
       <span className="font-bold">5 years</span> of experience. I enjoy building{" "}
-      <span className="italic">sites & apps</span>. My focus is{" "}
-      <span className="underline">React (Next.js)</span>.
+      <span className="italic">websites & mobile apps</span> using{" "}
+      <span className="underline">React & Python</span>.
     </motion.h1>
   );
 }
