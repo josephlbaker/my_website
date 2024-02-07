@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import bixImg from "@/public/BIX_screenshot.jpg";
 import itcxImg from "@/public/itcx_screenshot_2.png";
-import limsImg from "@/public/LIMS_screenshot.png";
+import limsImg from "@/public/LIMS_image.png";
 import missionCeramicsImg from "@/public/MC_screenshot2.png";
 
 export const links = [
