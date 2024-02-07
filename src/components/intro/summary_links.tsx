@@ -29,8 +29,8 @@ export default function SummaryLinks() {
         <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
       </Link>
       <a
-        href="/CV.pdf"
-        download="CV.pdf"
+        href="/JosephBakerCV.pdf"
+        download="/JosephBakerCV.pdf"
         className="group w-[228px] sm:w-auto justify-center bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
       >
         Download CV{" "}
